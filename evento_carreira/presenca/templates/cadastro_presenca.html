@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Cadastro de Presenças</title>
+</head>
+<body>
+
+        <form method="post">
+        <h1>Cadastro de Presença</h1>
+        {% csrf_token %}
+        <h3>Nome do aluno:</h3>
+        {{ form.nome_aluno }}
+        <br>
+        <h3>Nome do professor:</h3>
+        <select name="nome_professor">
+            <option value="">Selecione um professor</option>
+            <option value="Orlando">Orlando</option>
+            <option value="Esdras">Esdras</option>
+            <option value="Thiago">Thiago</option>
+            <option value="Jonas">Jonas</option>
+            <option value="Angela">Angela</option>
+            <option value="Sandro">Sandro</option>
+            <option value="Ana Célia">Ana Célia</option>
+            <option value="Vagner">Vagner</option>
+            <option value="João">João</option> 
+        </select>
+        <br>
+        <br>
+
+        <button background-color="#4CAF50" type="submit">Enviar</button>
+
+        <div class="botao-gerar-relatorio">
+            <a href="/listar">Gerar relatório</a>
+        </div>
+        </form>
+
+</body>
+</html>

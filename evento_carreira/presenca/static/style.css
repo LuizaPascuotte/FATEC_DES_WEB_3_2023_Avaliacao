@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family= Gowun +Batang & family= Roboto:wght@500 & display=swap');
+
+
+body {
+    background-color: #D99996;
+}
+
+
+h1 {
+    text-align: center;
+    font-family: 'Gowun Batang', sans-serif;
+}
+
+h3 {
+    font-family: 'Gowun Batang', sans-serif;
+}
+
+form {
+    width: 400px;
+    margin: 10% auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    
+}
+
+form button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button :hover {
+    background-color: #004080;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: #e5d3e3;
+    text-align: center;
+    padding: 8px;
+}
+
+table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #e67474;
+}
+
+.botao-gerar-relatorio {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.botao-gerar-relatorio a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.botao-gerar-relatorio a:hover {
+    background-color: #004080;
+}
+
+.botao-voltar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.botao-voltar a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.botao-voltar a:hover {
+    background-color: #004080;
+}

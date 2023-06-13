@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Lista de Alunos</title>
+</head>
+<body>
+    <h1>Alunos Presentes</h1>
+    <table>
+      <thead>
+        <th>Nome do aluno</th>
+        <th>Nome do professor</th>
+      </thead>
+      {% for aluno in alunos %}
+      <tbody>
+        <td>{{ aluno.nome_aluno }}</td>
+        <td>{{ aluno.nome_professor}}</td>
+      </tbody>
+      {% empty %}
+        <h1>Nenhum aluno presente até o momento.</h1>
+      {% endfor %}
+    </table>
+    <div class="botao-voltar">
+      <a href="/">Voltar à área de cadastro</a>
+    </div>
+    
+</body>
+</html>

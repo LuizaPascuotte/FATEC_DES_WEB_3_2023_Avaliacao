@@ -1,0 +1,28 @@
+# Arquivos compilados e gerados
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+wsgi.pyc
+
+# Arquivos de cache
+*.log
+logs/
+.cache/
+.cached/
+
+# Banco de dados
+db.sqlite3
+
+# Ambientes virtuais
+venv/
+
+# Arquivos gerados automaticamente
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
